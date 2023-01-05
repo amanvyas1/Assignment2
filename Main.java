@@ -80,6 +80,7 @@ class Main {
 								}
 							}
 							
+				
 							if(isNum(expArray[0]) && isNum(expArray[1])) {
 								Integer result = null; 
 								Integer n1 =  Integer.parseInt(expArray[0]);
@@ -171,7 +172,7 @@ class Main {
 	
 	//checks whether proper cell or not
 	public static boolean isValidCell(String str) {
-		return Pattern.matches("^[A-Z]{1,2}[1-9]{1,5}$", str);
+		return Pattern.matches("^[A-Z]{1,2}[1-9]{1}[0-9]{0,4}$", str);
 	}
 	
 	//checks whether number or not
